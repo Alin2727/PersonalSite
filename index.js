@@ -1,11 +1,11 @@
-$(document).ready(function() {
+// $(document).ready(function() {
  
-    // Fakes the loading setting a timeout
-      setTimeout(function() {
-          $('body').addClass('loaded');
-      }, 1500);
+//     // Fakes the loading setting a timeout
+//       setTimeout(function() {
+//           $('body').addClass('loaded');
+//       }, 1500);
    
-  });
+//   });
 
 // Navbar on scroll
   // window.onscroll = function() {scrollFunction()};

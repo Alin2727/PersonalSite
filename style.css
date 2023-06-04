@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import "bourbon";
 
 *,
@@ -14,14 +13,14 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+
 }
 
 
 body {
-    width: 100vw;
     height: 100vh;
-
+    width: 100vw;
+    overflow-x: hidden !important;
     background-color: #F6F1F1;
     color: #F6F1F1;
 
@@ -49,6 +48,7 @@ nav {
 
 
 nav a {
+    flex: 1;
     text-decoration: none;
     text-transform: capitalize;
     color: #FFFAF4;
@@ -91,7 +91,7 @@ ul a {
 
 ul a:hover {
     border-bottom: 2px solid #F6F1F1;
-    ;
+
 
 
 }
@@ -104,10 +104,6 @@ ul a:hover {
 }
 
 
-#resume:hover {
-    transition: all .3s ease-in-out;
-    transform: scale(1.1);
-}
 
 .fa-bars:before,
 .fa-navicon:before {
@@ -139,7 +135,7 @@ ul a:hover {
         height: calc(100vh - 60px) !important;
         transition: 0.5s;
         padding-top: 2rem;
-        padding-bottom: 100vh;
+        padding-bottom: 1000px;
 
     }
 
@@ -170,7 +166,7 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     align-content: center;
-
+    margin: 3rem auto 0;
 }
 
 .hero-section {
@@ -181,9 +177,6 @@ ul a:hover {
     flex: 1;
     color: #222831;
     text-align: center;
-    margin-left: 10rem;
-
-
 }
 
 .hero-photo {
@@ -191,163 +184,80 @@ ul a:hover {
     justify-content: center;
     align-self: center;
     flex: 1;
-    margin-right: 10rem;
-
 }
 
 body>div.container-hero>div.hero-photo>img {
-    height: 700px;
-    width: 700px;
-
+    height: 600px;
+    width: 600px;
     margin: 0 auto !important;
 }
 
 body>div.container-hero>div.hero-photo>img:hover {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     transform: scale(1.1);
 }
 
-
-
 body>div.container-hero>div.hero-section>h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: 'Lilita One', cursive;
+    flex: 1;
 }
 
 body>div.container-hero>div.hero-section>p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
-    max-width: 800px;
-
-
+    flex: 1;
+    max-width: 650px;
 }
 
-
-@media (max-width: 1580px) {
-    .container-hero {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-
-    }
-
-    .hero-photo {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        flex: 1;
-        margin: 0;
-
-    }
-
+@media (max-width: 1350px) {
     body>div.container-hero>div.hero-photo>img {
         height: 400px;
         width: 400px;
-        margin: 0 auto 2rem !important;
-    }
-
-    body>div.container-hero>div.hero-photo>img:hover {
-        transition: all .3s ease-in-out;
-        transform: scale(1.1);
-    }
-
-    .hero-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        align-self: center;
-        flex: 1;
-        color: #222831;
-        margin: 2rem 0;
-
-
-    }
-
-    body>div.container-hero>div.hero-section>h1 {
-        font-size: 5rem;
-        font-family: 'Lilita One', cursive;
-    }
-
-    body>div.container-hero>div.hero-section>p {
-        font-size: 1.3rem;
-        font-family: "Poppins", sans-serif;
-        padding-left: 0.2rem;
-        min-width: 450px;
-
-    }
-
-
-}
-
-@media (max-width: 750px) {
-    .container-hero {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-
-    }
-
-    .hero-photo {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        flex: 1;
-        margin: 0;
-
-    }
-
-    body>div.container-hero>div.hero-photo>img {
-        height: 300px;
-        width: 300px;
-        /* margin-left: 10%;
-        margin-bottom: 10%; */
-        margin: 0 auto 3rem !important;
-    }
-
-    body>div.container-hero>div.hero-photo>img:hover {
-        transition: all .3s ease-in-out;
-        transform: scale(1.1);
-    }
-
-    .hero-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.7rem;
-        flex-wrap: wrap;
-        align-self: center;
-        flex: 1;
-        color: #222831;
-        margin: 1rem 0 0;
-
-
     }
 
     body>div.container-hero>div.hero-section>h1 {
         font-size: 4rem;
-        font-family: 'Lilita One', cursive;
     }
 
     body>div.container-hero>div.hero-section>p {
-        font-size: 1.2rem;
-        font-family: "Poppins", sans-serif;
-        padding-left: 0.2rem;
-        min-width: 450px;
+        font-size: 1rem;
+        max-width: 500px;
+    }
+}
 
+@media (max-width: 1000px) {
+    body>div.container-hero>div.hero-photo>img {
+        height: 400px;
+        width: 400px;
     }
 
+    body>div.container-hero>div.hero-section>h1 {
+        font-size: 3rem;
+    }
 
+    body>div.container-hero>div.hero-section>p {
+        font-size: 1rem;
+        max-width: 400px;
+    }
 }
+
+@media (max-width: 1000px) {
+    body>div.container-hero>div.hero-photo>img {
+        height: 400px;
+        width: 400px;
+    }
+
+    body>div.container-hero>div.hero-section>h1 {
+        font-size: 3rem;
+    }
+
+    body>div.container-hero>div.hero-section>p {
+        font-size: 1rem;
+        max-width: 400px;
+    }
+}
+
 
 /* Arrow */
 .arrows {
@@ -426,6 +336,7 @@ body>div.container-hero>div.hero-section>p {
 
 
 
+
 /* About */
 
 
@@ -436,12 +347,16 @@ body>div.container-hero>div.hero-section>p {
 /* Portofolio */
 
 
+
+
+
+
 /* Footer */
 
 
 
 /*  Loader */
-
+/* 
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -553,4 +468,4 @@ body>div.container-hero>div.hero-section>p {
     visibility: hidden;
     transform: translateY(-100%);
     transition: all 0.3s 1s ease-out;
-}
+} */
