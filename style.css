@@ -83,19 +83,28 @@ ul {
 }
 
 ul a {
-    padding: 0.5rem;
+    position: relative;
     font-size: 1.2rem;
 
 }
 
-ul a:hover {
-    border-bottom: 2px solid #F6F1F1;
+ul a:after {
+    content: "";
+    position: absolute;
+    background-color: #3AB4F2;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
 }
 
-#resume {
-    border: 2px solid #F6F1F1;
-    padding: 10px;
-    border-radius: 30px;
+ul a:hover {
+    color: #3AB4F2;
+}
+
+ul a:hover::after {
+    width: 100%;
 }
 
 
@@ -145,6 +154,12 @@ ul a:hover {
         border-bottom: 2px solid #F6F1F1;
     }
 }
+
+
+/* Button effect */
+
+
+
 
 
 
@@ -235,8 +250,8 @@ body>div.container-hero>div.hero-section>p {
     }
 
     body>div.container-hero>div.hero-photo>img {
-        height: 300px;
-        width: 300px;
+        height: 350px;
+        width: 350px;
     }
 
     body>div.container-hero>div.hero-section>h1 {
@@ -247,6 +262,16 @@ body>div.container-hero>div.hero-section>p {
         font-size: 1rem;
         min-width: 250px;
     }
+
+    .arrows {
+        width: 60px;
+        height: 71px;
+        position: absolute;
+        left: 50%;
+        margin-left: -30px;
+        bottom: 2rem;
+    }
+
 
 
 }
@@ -261,7 +286,7 @@ body>div.container-hero>div.hero-section>p {
     position: absolute;
     left: 50%;
     margin-left: -30px;
-    bottom: 0.8rem;
+    bottom: 3rem;
 }
 
 .arrows path {
@@ -466,4 +491,32 @@ body>div.container>footer>ul>li>a:hover {
     visibility: hidden;
     transform: translateY(-100%);
     transition: all 0.3s 1s ease-out;
+}
+
+/* Hidden & Show */
+
+.hidden-left {
+    opacity: 0;
+    filter: blur(0px);
+    transition: opacity 1.5s ease-in-out, filter 1.5s ease-in-out, transform 1.5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.show-left {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden-right {
+    opacity: 0;
+    filter: blur(0px);
+    transition: opacity 1.5s ease-in-out, filter 1.5s ease-in-out, transform 1.5s ease-in-out;
+    transform: translateX(100%);
+}
+
+.show-right {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
