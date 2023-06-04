@@ -159,6 +159,7 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-left: 3rem;
 }
 
 .hero-section {
@@ -203,10 +204,15 @@ body>div.container-hero>div.hero-section>p {
     min-width: 500px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
+    .container-hero {
+
+        margin-left: 0;
+    }
+
     body>div.container-hero>div.hero-photo>img {
-        height: 400px;
-        width: 400px;
+        height: 500px;
+        width: 500px;
     }
 
     body>div.container-hero>div.hero-section>h1 {
@@ -215,7 +221,7 @@ body>div.container-hero>div.hero-section>p {
 
     body>div.container-hero>div.hero-section>p {
         font-size: 1.2rem;
-        max-width: 500px;
+        min-width: 500px;
     }
 
 
@@ -224,6 +230,11 @@ body>div.container-hero>div.hero-section>p {
 
 
 @media (max-width: 700px) {
+    .container-hero {
+
+        margin-left: 0;
+    }
+
     body>div.container-hero>div.hero-photo>img {
         height: 300px;
         width: 300px;
@@ -235,7 +246,7 @@ body>div.container-hero>div.hero-section>p {
 
     body>div.container-hero>div.hero-section>p {
         font-size: 1rem;
-        min-width: 200px;
+        min-width: 250px;
     }
 
 
@@ -251,7 +262,7 @@ body>div.container-hero>div.hero-section>p {
     position: absolute;
     left: 50%;
     margin-left: -30px;
-    bottom: 50px;
+    bottom: 1rem;
 }
 
 .arrows path {
