@@ -8,14 +8,14 @@ $(document).ready(function() {
   });
 
 // Navbar on scroll
-  window.onscroll = function() {scrollFunction()};
+  // window.onscroll = function() {scrollFunction()};
  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  // function scrollFunction() {
+  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       
-      document.getElementById("navbar").style.background = "none"; // on scroll
-    } else {
+  //     document.getElementById("navbar").style.background = "none"; // on scroll
+  //   } else {
      
-      document.getElementById("navbar").style.background = "#EA5455"; // initial
-    }
-  }
+  //     document.getElementById("navbar").style.background = "#EA5455"; // initial
+  //   }
+  // }
