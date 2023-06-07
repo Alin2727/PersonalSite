@@ -41,4 +41,13 @@ $(document).ready(function() {
       const hiddenElementsRight = document.querySelectorAll('.hidden-right');
       hiddenElementsRight.forEach((el) => observerRight.observe(el));
     
-  
+
+      //// Scroll behavior
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1200);
+    });
+    

@@ -24,6 +24,7 @@ body {
     overflow-x: hidden;
     background-color: #F6F1F1;
     color: #F6F1F1;
+    font-size: 16px;
 
 }
 
@@ -248,16 +249,16 @@ body>div.container-hero>div.hero-section>p {
     }
 
     body>div.container-hero>div.hero-photo>img {
-        height: 450px;
-        width: 450px;
+        height: 370px;
+        width: 370px;
     }
 
     body>div.container-hero>div.hero-section>h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     body>div.container-hero>div.hero-section>p {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         max-width: 700px;
     }
 }
@@ -274,34 +275,34 @@ body>div.container-hero>div.hero-section>p {
     }
 
     body>div.container-hero>div.hero-section>h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     body>div.container-hero>div.hero-section>p {
-        font-size: 1.4rem;
-        min-width: 400px;
+        font-size: 1rem;
+        min-width: 250px;
     }
 
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
     .container-hero {
         margin-left: 0;
     }
 
     body>div.container-hero>div.hero-photo>img {
-        height: 250px;
-        width: 250px;
+        height: 200px;
+        width: 200px;
     }
 
     body>div.container-hero>div.hero-section>h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     body>div.container-hero>div.hero-section>p {
-        font-size: 1.1rem;
-        min-width: 200px;
+        font-size: 0.7rem;
+        min-width: 250px;
     }
 
 
@@ -407,6 +408,11 @@ body>div.container.px-4.py-5>h2 {
     text-align: center;
 }
 
+.about-image-portofolio {
+    height: 25px;
+    width: 25px;
+}
+
 /* Portofolio */
 
 #projects>div>h2 {
@@ -421,6 +427,35 @@ body>div.container.px-4.py-5>h2 {
     width: 50px;
 }
 
+#about>div>div:nth-child(2)>div>div>h4 {
+    font-size: calc(1rem + .3vw);
+}
+
+#about>h2 {
+    padding-top: 25px;
+}
+
+#projects>div>h2 {
+    margin-top: 25px;
+}
+
+#resume {
+    background-color: #EA5455;
+    color: #FFFAF4;
+    border: none;
+    padding: 7px 20px;
+    font-size: 1.2rem;
+}
+
+/* @media (min-width: 576px) {
+
+    .container,
+    .container-sm {
+        min-width: 700px !important;
+    }
+} */
+
+
 
 
 /* Footer */
@@ -430,6 +465,24 @@ body>div.container>footer>ul>li>a:hover {
 }
 
 
+body>footer {
+    background-color: #EA5455;
+    color: #FFFAF4 !important;
+    margin: 0 !important;
+}
+
+.my-4 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#footer>ul>li>a {
+    color: #FFFAF4 !important;
+}
+
+#footer>p {
+    color: #FFFAF4 !important;
+}
 
 /*  Loader */
 
