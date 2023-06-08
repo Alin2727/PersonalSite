@@ -95,7 +95,7 @@ ul a {
 ul a:after {
     content: "";
     position: absolute;
-    background-color: #3AB4F2;
+    background-color: #FFFAF4;
     height: 3px;
     width: 0;
     left: 0;
