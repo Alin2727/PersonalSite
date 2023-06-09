@@ -3,7 +3,7 @@ $(document).ready(function() {
     // Fakes the loading setting a timeout
       setTimeout(function() {
           $('body').addClass('loaded');
-      },500);
+      },100);
    
   });
 
@@ -43,11 +43,45 @@ $(document).ready(function() {
     
 
       //// Scroll behavior
+
+
+
       $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
+      
+        var target = $($.attr(this, 'href'));
+        var targetOffset = target.offset().top;
+      
+        if ($(window).scrollTop() !== targetOffset) {
+          $('html, body').animate({
+            scrollTop: targetOffset
+          }, 1000);
+        }
+      });
+      
     
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1200);
-    });
     
+//    $(document).ready(function() {
+//   // Add smooth scrolling to all links
+//   $("a").on('click', function(event) {
+//     // Make sure this.hash has a value before overriding default behavior
+//     if (this.hash !== "") {
+//       // Prevent default anchor click behavior
+//       event.preventDefault();
+
+//       // Store hash
+//       var hash = this.hash;
+
+//       // Using jQuery's animate() method to add smooth page scroll
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 1200, function() {
+//         // Check if the hash value has changed
+//         if (window.location.hash !== hash) {
+//           // Add hash (#) to URL when done scrolling (default click behavior)
+//           window.location.hash = hash;
+//         }
+//       });
+//     }
+//   });
+// });

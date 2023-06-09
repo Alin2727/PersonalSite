@@ -33,8 +33,8 @@ body {
 
 #logo {
     margin-left: 1rem;
-    width: 72.1px;
-    height: 41.4px;
+    width: 62.1px;
+    height: 31.4px;
 }
 
 nav {
@@ -78,7 +78,7 @@ label {
     cursor: pointer;
 }
 
-ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -86,13 +86,13 @@ ul {
     padding-left: 0;
 }
 
-ul a {
+nav ul a {
     position: relative;
     font-size: 1.2rem;
 
 }
 
-ul a:after {
+nav ul a:after {
     content: "";
     position: absolute;
     background-color: #FFFAF4;
@@ -103,11 +103,9 @@ ul a:after {
     transition: 0.3s;
 }
 
-/* ul a:hover {
-    color: #3AB4F2;
-} */
 
-ul a:hover::after {
+
+nav ul a:hover::after {
     width: 100%;
 }
 
@@ -206,7 +204,7 @@ body>div.container-hero>div.hero-photo>img {
 
 body>div.container-hero>div.hero-photo>img:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 body>div.container-hero>div.hero-section>h1 {
@@ -439,7 +437,17 @@ body>div.container.px-4.py-5>h2 {
 }
 
 #portofolio>h2 {
-    margin-bottom: 35px;
+    margin: 35px 0;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+
+    .container,
+    .container-sm {
+        max-width: 700px !important;
+    }
+
+
 }
 
 
@@ -449,45 +457,46 @@ body>div.container.px-4.py-5>h2 {
     background-color: #EA5455;
     color: #FFFAF4;
     border: none;
-    padding: 7px 20px;
+    padding: 5px 20px;
     font-size: 1.2rem;
 }
 
-/* @media (min-width: 576px) {
+#resume:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 
-    .container,
-    .container-sm {
-        min-width: 700px !important;
-    }
-} */
+}
 
 
 
 
 /* Footer */
 
-body>div.container>footer>ul>li>a:hover {
-    border: none;
-}
 
-
-body>footer {
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #EA5455;
-    color: #FFFAF4 !important;
-    margin: 0 !important;
+    color: #FFFAF4;
+    gap: 1rem;
 }
 
-.my-4 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+.heading-footer {
+    font-family: 'Lilita One', cursive;
+
+    margin-top: 1rem;
 }
 
-#footer>ul>li>a {
-    color: #FFFAF4 !important;
+.icon-section {
+    margin-bottom: 1rem;
 }
 
-#footer>p {
-    color: #FFFAF4 !important;
+#contact-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+
 }
 
 /*  Loader */
