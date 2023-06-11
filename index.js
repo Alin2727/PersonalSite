@@ -16,9 +16,6 @@ $(document).ready(function() {
       if(entry.isIntersecting) {
         entry.target.classList.add('show-left');
       }
-      // } else{
-      //   entry.target.classList.remove('show');
-      // }
     });
   });
   
@@ -32,9 +29,6 @@ $(document).ready(function() {
         if(entry.isIntersecting) {
           entry.target.classList.add('show-right');
         }
-        // } else{
-        //   entry.target.classList.remove('show');
-        // }
       });
     });
     
@@ -42,22 +36,6 @@ $(document).ready(function() {
       hiddenElementsRight.forEach((el) => observerRight.observe(el));
     
 
-      //// Scroll behavior
-
-
-
-      // $(document).on('click', 'a[href^="#"]', function (event) {
-      //   event.preventDefault();
-      
-      //   var target = $($.attr(this, 'href'));
-      //   var targetOffset = target.offset().top;
-      
-      //   if ($(window).scrollTop() !== targetOffset) {
-      //     $('html, body').animate({
-      //       scrollTop: targetOffset
-      //     }, 1000);
-      //   }
-      // });
       
     
     

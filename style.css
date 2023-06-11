@@ -160,13 +160,6 @@ nav ul a:hover::after {
 }
 
 
-/* Button effect */
-
-
-
-
-
-
 /*   Hero */
 
 .container-hero {
@@ -451,7 +444,6 @@ body>div.container.px-4.py-5>h2 {
 
 #portofolio {
     background-color: #F6F1F1 !important;
-
 }
 
 #portofolio>h2 {
