@@ -483,6 +483,10 @@ body>div.container.px-4.py-5>h2 {
     gap: 1rem;
 }
 
+.heading-footer {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.4rem;
+}
 
 
 #contact-btn:hover {
@@ -522,6 +526,11 @@ body>div.icon-section>a>img {
     .contact-me {
         height: 140px;
         width: 250px;
+    }
+
+    .heading-footer {
+
+        font-size: 1.8rem;
     }
 
 }
