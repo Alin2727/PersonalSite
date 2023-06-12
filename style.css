@@ -432,16 +432,7 @@ body>div.container.px-4.py-5>h2 {
 
 
 
-
-@media (min-width: 575px) and (max-width: 767px) {
-
-    .container,
-    .container-sm {
-        max-width: 600px !important;
-    }
-}
-
-@media (min-width: 2000px) {
+@media (min-width: 2500px) {
 
     .container,
     .container-lg,
@@ -449,7 +440,7 @@ body>div.container.px-4.py-5>h2 {
     .container-sm,
     .container-xl,
     .container-xxl {
-        max-width: 1500px;
+        max-width: 1800px;
     }
 
 }
