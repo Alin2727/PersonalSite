@@ -439,9 +439,21 @@ body>div.container.px-4.py-5>h2 {
     .container-sm {
         max-width: 600px !important;
     }
+}
 
+@media (min-width: 2000px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1500px;
+    }
 
 }
+
 
 #portfolio {
     background-color: #F6F1F1 !important;
