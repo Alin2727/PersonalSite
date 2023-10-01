@@ -12,7 +12,6 @@ $(document).ready(function() {
 
   const observerLeft = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      console.log(entry)
       if(entry.isIntersecting) {
         entry.target.classList.add('show-left');
       }
@@ -25,7 +24,6 @@ $(document).ready(function() {
 
     const observerRight = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry)
         if(entry.isIntersecting) {
           entry.target.classList.add('show-right');
         }
@@ -35,7 +33,11 @@ $(document).ready(function() {
       const hiddenElementsRight = document.querySelectorAll('.hidden-right');
       hiddenElementsRight.forEach((el) => observerRight.observe(el));
     
+   // Închideți meniul când se face clic pe un element din meniu pe versiunea mobilă
+$('nav ul a').on('click', function() {
+  if ($(window).width() <= 710) {
+      $('input[type="checkbox"]').prop('checked', false);
+  }
+});
 
       
-    
-    
